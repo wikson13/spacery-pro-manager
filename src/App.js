@@ -145,7 +145,7 @@ const  App=()=> {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap>
-                        Persistent drawer
+                        Spacery-wirtualne.pro
                     </Typography>
                 </Toolbar>
             </AppBar>

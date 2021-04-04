@@ -19,17 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c36922e2-b235-490d-b10d-7fc6da6f8b12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/fuji_xt20.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/nikon_D5200.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/CameraInstallation.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Presets.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Valuation.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/VirtualTours.jsx" afterDir="false" />
+    <list default="true" id="c36922e2-b235-490d-b10d-7fc6da6f8b12" name="Default Changelist" comment="eee">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Presets.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Presets.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,8 +97,17 @@
       <option name="presentableId" value="Default" />
       <updated>1606321120036</updated>
       <workItem from="1606321121915" duration="5053000" />
-      <workItem from="1617298294971" duration="7024000" />
+      <workItem from="1617298294971" duration="7133000" />
+      <workItem from="1617464932429" duration="9522000" />
     </task>
+    <task id="LOCAL-00001" summary="eee">
+      <created>1617306937655</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617306937656</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,11 +123,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="eee" />
+    <option name="LAST_COMMIT_MESSAGE" value="eee" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="329" key="Github.ShareDialog" timestamp="1606329210713">
-      <screen x="0" y="23" width="1440" height="809" />
+    <state x="2451" y="285" key="Vcs.Push.Dialog.v2" timestamp="1617306942916">
+      <screen x="1920" y="25" width="1862" height="1055" />
     </state>
-    <state x="552" y="329" key="Github.ShareDialog/0.23.1440.809@0.23.1440.809" timestamp="1606329210713" />
+    <state x="2451" y="285" key="Vcs.Push.Dialog.v2/1189.1105.1440.875/0.25.1920.1055/1920.25.1862.1055@1920.25.1862.1055" timestamp="1617306942916" />
   </component>
 </project>
