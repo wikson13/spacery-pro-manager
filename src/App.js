@@ -39,6 +39,7 @@ import {Presets} from "./pages/Presets";
 import {VirtualTours} from "./pages/VirtualTours";
 import {Valuation} from "./pages/Valuation";
 import {CameraInstallation} from "./pages/CameraInstallation";
+import {PanoheadUsage} from "./pages/PanoheadUsage";
 const drawerWidth = 300;
 
 const useStyles = makeStyles((theme) => ({
@@ -100,6 +101,11 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft: theme.spacing(4),
     },
 }));
+
+const activeStyle={
+    color: 'black',
+    fontWeight:'bold'
+}
 
 const  App=()=> {
     const classes = useStyles();
@@ -169,10 +175,7 @@ const  App=()=> {
                 >
                     <NavLink
                         to="/virtual-tours"
-                        activeStyle={{
-                            fontWeight: "bold",
-                            color: "red"
-                        }}
+                        activeStyle={activeStyle}
                     >
                     <ListItem button >
                         <ListItemIcon>
@@ -182,10 +185,7 @@ const  App=()=> {
                     </ListItem></NavLink>
                     <NavLink
                         to="/valuation"
-                        activeStyle={{
-                            fontWeight: "bold",
-                            color: "red"
-                        }}
+                        activeStyle={activeStyle}
                     >
                     <ListItem button >
                         <ListItemIcon>
@@ -203,53 +203,27 @@ const  App=()=> {
                     </ListItem>
                     <Collapse in={open1} timeout="auto" unmountOnExit>
                         <List component="div" disablePadding>
-                            <ListItem button onClick={handleClick2} className={classes.nested}>
-                                <ListItemIcon>
-                                    <TapAndPlayIcon />
-                                </ListItemIcon>
-                                <ListItemText primary="Obsługa głowicy" />
-                                {open2 ? <ExpandLess /> : <ExpandMore />}
-                            </ListItem>
-                            <Collapse in={open2} timeout="auto" unmountOnExit>
-                                <List component="div" disablePadding>
-                                    <ListItem button className={classes.nested}>
-                                        <ListItemIcon>
-                                            <SubdirectoryArrowRightIcon />
-                                        </ListItemIcon>
-                                        <ListItemText primary="01 Przygotowanie głowicy" />
-                                    </ListItem>
-                                    <ListItem button className={classes.nested}>
+
+
+
+                            <NavLink
+                                to="/panohead-usage"
+                                activeStyle={activeStyle}
+
+                            >
+                                <ListItem button className={classes.nested}>
                                     <ListItemIcon>
-                                        <SubdirectoryArrowRightIcon />
+                                        <TapAndPlayIcon />
                                     </ListItemIcon>
-                                    <ListItemText primary="02 Łączenie z urządzeniem" />
+                                    <ListItemText primary="Obsługa głowicy" />
                                 </ListItem>
-                                    <ListItem button className={classes.nested}>
-                                        <ListItemIcon>
-                                            <SubdirectoryArrowRightIcon />
-                                        </ListItemIcon>
-                                        <ListItemText primary="03 Kalibracja początkowa" />
-                                    </ListItem>
-                                    <ListItem button className={classes.nested}>
-                                        <ListItemIcon>
-                                            <SubdirectoryArrowRightIcon />
-                                        </ListItemIcon>
-                                        <ListItemText primary="04 Ustawienia fotografowania" />
-                                    </ListItem>
-                                    <ListItem button className={classes.nested}>
-                                        <ListItemIcon>
-                                            <SubdirectoryArrowRightIcon />
-                                        </ListItemIcon>
-                                        <ListItemText primary="05 Sesja zdjęciowa" />
-                                    </ListItem>
-                                </List>
-                            </Collapse>
+                            </NavLink>
+
+
                             <NavLink
                                 to="/camera-installation"
-                                activeStyle={{
-                                    fontWeight: "bold",
-                                    color: "red"
-                                }}
+                                activeStyle={activeStyle}
+
                             >
                             <ListItem button className={classes.nested}>
                                 <ListItemIcon>
@@ -262,11 +236,9 @@ const  App=()=> {
                     </Collapse>
                     <NavLink
                     to="/presets"
-                    activeStyle={{
-                        fontWeight: "bold",
-                        color: "red"
-                    }}
-                >
+                    activeStyle={activeStyle}
+
+                    >
                     <ListItem button >
                         <ListItemIcon>
                             <AttachMoneyIcon />
@@ -294,6 +266,9 @@ const  App=()=> {
                     </Route>
                     <Route path="/camera-installation">
                         <CameraInstallation />
+                    </Route>
+                    <Route path="/panohead-usage">
+                        <PanoheadUsage />
                     </Route>
                     <Route path="/">
                         home

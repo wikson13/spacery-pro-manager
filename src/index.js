@@ -7,12 +7,29 @@ import {
     BrowserRouter ,
 
 } from "react-router-dom";
+import { ThemeProvider,createMuiTheme } from '@material-ui/core/styles';
+
+
+const theme = createMuiTheme({
+    palette: {
+        primary: {
+            main: '#0652dd',
+        },
+        secondary: {
+            main: '#00ff00',
+        },
+    },
+});
+
 
 ReactDOM.render(
   <React.StrictMode>
+      <ThemeProvider theme={theme}>
+
       <BrowserRouter>
     <App />
       </BrowserRouter>
+      </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
